@@ -14,10 +14,11 @@
 
 body {
   font-family: Roboto, sans-serif;
-  background-color: var(--main-color);
   font-size: 14px;
   letter-spacing: 0.03em;
+  background-color: var(--main-color);
 }
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -30,18 +31,23 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
+
 :hover,
 :focus {
   color: var(--accent-color);
 }
+
 .current {
   color: var(--accent-color);
+
   ::after {
     position: relative;
     content: * *;
@@ -53,6 +59,7 @@ body {
     background-color: var(--accent-color);
   }
 }
+
 .webstudio {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -65,30 +72,50 @@ body {
 .top {
   background-color: var(--main-color);
 }
+
 .top-web {
   color: var(--accent-color);
 }
+
 .top-studio {
   color: var(--second-color);
 }
 
-.top-nav-link :hover :focus {
+
+.top-nav-link link {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
 
-.top-list-link :hover :focus {
+.top-nav-link:hover,
+.top-nav-link:focus {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.top-list-link {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
 
+.top-list-link:hover,
+.top-list-link:focus {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
 .center-hero {
   background: var(--background-color);
 }
+
 .center-hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -99,7 +126,7 @@ body {
   color: var(--main-color);
 }
 
-:hover :focus .center-hero-button {
+.center-hero-button {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -115,12 +142,32 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.center-hero-button:hover,
+.center-hero-button:focus {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--accent-color);
+  background-color: var(--main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .center-skills-title {
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--title-color);
 }
+
 .center-skills-text {
   font-weight: 400;
   line-height: calc(24 / 14);
@@ -138,6 +185,7 @@ body {
 .center-workers {
   background: var(--third-color);
 }
+
 .center-workers-title {
   font-weight: 700;
   font-size: 36px;
@@ -153,6 +201,7 @@ body {
   text-align: center;
   color: var(--title-color);
 }
+
 .center-workers-profession {
   font-weight: 400;
   font-size: 16px;
@@ -168,6 +217,7 @@ body {
 .bottom-web {
   color: var(--accent-color);
 }
+
 .bottom-studio {
   color: var(--main-color);
 }
@@ -178,16 +228,31 @@ body {
   font-weight: 400;
   line-height: calc(24 / 14);
 }
-.bottom-address-link :hover :focus {
+
+.bottom-address-link {
+  line-height: calc(24 / 14);
   color: var(--main-color);
 }
-.bottom-list-link :hover :focus {
+
+.bottom-address-link:hover,
+.bottom-address-link:focus {
+  line-height: calc(24 / 14);
+  color: var(--accent-color);
+}
+
+.bottom-list-link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.bottom-list-link:hover,
+.bottom-list-link:focus {
+  color: var(--accent-color);
 }
 
 .middle {
   background-color: var(--main-color);
 }
+
 .middle-nav {
   font-weight: 500;
   font-size: 16px;
@@ -195,6 +260,7 @@ body {
   text-align: center;
   color: var(--title-color);
 }
+
 .middle-nav-button :hover :focus {
   font-family: inherit;
   font-style: normal;
@@ -209,6 +275,21 @@ body {
   cursor: pointer;
 }
 
+.middle-nav-button:hover,
+.middle-nav-button:focus {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .middle-choice-title {
   font-weight: 700;
   font-size: 18px;
@@ -216,6 +297,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
+
 .middle-choice-text {
   font-weight: 400;
   font-size: 16px;
