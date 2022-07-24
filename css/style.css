@@ -5,24 +5,17 @@
   --background-color: #2f303a;
   --btn-color: #212121;
   --accent-color: #2196f3;
+  --one-color: #eeeeee;
+  --second-color: #000000;
+  --third-color: #f5f4fa;
+  --fourth-color: #2f303a;
+  --fifth-color: #ececec;
 }
+
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--main-color);
-}
-
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
-.webstudio {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 .visually-hidden {
@@ -37,28 +30,57 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+:hover,
+:focus {
+  color: var(--accent-color);
+}
+.current {
+  color: var(--accent-color);
+  ::after {
+    position: relative;
+    content: * *;
+    display: block;
+    bottom: -29px;
+    left: 0;
+    height: 4px;
+    border-raduis: 2px;
+    background-color: var(--accent-color);
+  }
+}
+.webstudio {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
 
 .top {
-  background-color: #ececec;
+  background-color: var(--main-color);
 }
 .top-web {
   color: var(--accent-color);
 }
 .top-studio {
-  color: #000000;
+  color: var(--second-color);
 }
 
-.top-nav-link {
+.top-nav-link :hover :focus {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
 
-.top-list-link {
+.top-list-link :hover :focus {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--text-color);
@@ -76,30 +98,32 @@ body {
   text-transform: uppercase;
   color: var(--main-color);
 }
-.center-hero-button {
+
+:hover :focus .center-hero-button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30 / 16);
+  line-height: 30px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
 }
-
 .center-skills-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
 }
 .center-skills-text {
   font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
@@ -108,19 +132,17 @@ body {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-color);
 }
 
 .center-workers {
-  background: #f5f4fa;
+  background: var(--third-color);
 }
 .center-workers-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-color);
 }
 
@@ -129,7 +151,6 @@ body {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-color);
 }
 .center-workers-profession {
@@ -137,7 +158,6 @@ body {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
@@ -156,29 +176,26 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
 }
-.bottom-address-link {
+.bottom-address-link :hover :focus {
   color: var(--main-color);
 }
-.bottom-list-link {
+.bottom-list-link :hover :focus {
   color: rgba(255, 255, 255, 0.6);
 }
+
 .middle {
-  background-color: #e5e5e5;
+  background-color: var(--main-color);
 }
 .middle-nav {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.middle-nav-button {
-  cursor: pointer;
+.middle-nav-button :hover :focus {
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -187,7 +204,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--btn-color);
+  background-color: var(--third-color);
+  border-radius: 4px;
+  cursor: pointer;
 }
+
 .middle-choice-title {
   font-weight: 700;
   font-size: 18px;
@@ -199,6 +220,5 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
   color: var(--text-color);
 }
