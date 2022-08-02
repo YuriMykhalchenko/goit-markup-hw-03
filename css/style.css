@@ -248,7 +248,10 @@ body {
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 10px;
+}
 
+.about {
+  padding-top: 0;
 }
 
 .center-about-list {
@@ -305,7 +308,7 @@ body {
 
 .name {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -316,14 +319,9 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--title-color);
+  padding-bottom: 10px;
 }
 
-.profession {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .center-workers-profession {
   font-weight: 400;
@@ -338,11 +336,8 @@ body {
   padding: 60px 0px;
 }
 
-.bottom-link {}
-
 .bottom-web {
   color: var(--accent-color);
-
 }
 
 .bottom-studio {
@@ -457,12 +452,9 @@ body {
 }
 
 .choice-title {
-  margin: 20px 24px 4px;
+  margin: 20px 24px;
 }
 
-.choice-text {
-  margin: 4px 24px 20px;
-}
 
 .middle-choice-title {
   font-weight: 700;
@@ -470,6 +462,7 @@ body {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--title-color);
+  padding-bottom: 4px;
 }
 
 .middle-choice-text {
